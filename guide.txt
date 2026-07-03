@@ -1,0 +1,67 @@
+Các bước / thao tác làm việc với git
+I, Đối với lần đầu tạo project
+    B1: Tạo repository trên github
+    B2: Clone về máy
+    -> git clone https://github.com/<username>/Library_books.git
+    -> Hoặc dùng: Ctrl + Shift + P → Git: Clone
+    B3: Tạo một thư mục để lưu code được lấy từ github về
+
+II, Cấu hình git (chỉ cần làm một lần trên máy)
+    B1: Đặt tên
+        git config --global user.name "tên muốn để"
+    B2: Đặt email
+        git config --global user.email "email sử dụng"
+    B3: Kiểm tra lại
+        git config --global --list
+
+III, Quy trình code hàng ngày
+    B1: Kiểm tra trạng thái
+        git status
+    B2: Đưa thay đổi vào stage
+        git add .
+        Hoặc: git add 'tên file'
+    B3: Commit
+        git commit -m 'Nội dung commit'
+    B4: Đẩy lên github
+        git push
+    
+IV, Xem lịch sử
+    1. Xem lịch sử đơn giản
+        git log
+    2. Một dòng
+        git log --oneline
+    3. Có sơ đồ branch
+        git log --oneline --graph --decorate --all
+
+V, Branch 
+    1. Xem branch
+        git branch
+    2. Tạo branch
+        git branch feature/hompage
+    3. Chuyến branch
+        git switch feature/hompage
+    4. Tạo và chuyển luôn
+        git switch -c feature/homepage
+
+VI, Push branch mới
+    1. Lần đầu push
+        git push -u origin feature/homepage
+    2. Sau đó
+        git push
+
+VII, Lấy code mới nhất
+    git pull
+
+VIII, Merge
+    1. Quay về main
+        git switch main
+    2. Merge
+        git merge feature/homepage
+    3. Push
+        git push
+
+IX, Xóa branch
+    1. Xóa local
+        git branch -d feature/homepage
+    2. Xóa trên github
+        git push origin --delete feature/homepage
