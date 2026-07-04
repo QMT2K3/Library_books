@@ -1,0 +1,88 @@
+/* base main */
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration-line: none;
+}
+input {
+    border: 0.3px solid var(--sub_content);
+    border-radius: 10px;
+}
+input:focus {
+    border-color: var(--main_yellow_02);
+    outline: none;
+}
+
+/* base color */
+:root {
+    --main_blue: #08274E;
+    --main_yellow_01: #BB8538;
+    --main_yellow_02: #EEB25E;
+    --light_blue: #D6E0EE;
+    --content: #1F2937;
+    --sub_content: #6B7280;
+    --white: #FFFFFF;
+    --pale_white: #F5F5F5;
+}
+
+/* base text */
+@font-face {
+    font-family: "Playfair_Display";
+    src: url(../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+    font-weight: 600 800;   
+}
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+.text_title_page {
+    font-family: "Playfair_Display";
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 46px;
+    color: var(--main_blue);
+}
+.text_sub_title_page {
+    font-family: "Playfair_Display";
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 38px;
+    color: var(--main_blue);
+}
+.text_title_card {
+    font-family: "Inter";
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 32px;
+    color: var(--main_blue);
+}
+.text_title {
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--main_blue);
+}
+.text_navigation {
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--main_blue);
+}
+.text_describe {
+    font-family: "Inter";
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--sub_content);
+}
+.text_content {
+    font-family: "Inter";
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--content);
+}

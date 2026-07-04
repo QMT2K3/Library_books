@@ -1,0 +1,127 @@
+/* Login */
+.login_page {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/assets/images/background.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login_page img {
+    width: 100px;
+    margin: 20px 0px 50px;
+}
+.login_page_form {
+    padding: 64px;
+    border: 0.3px solid var(--sub_content);
+    border-radius: 20px;
+    background-color: var(--light_blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login_page_form .form_title {
+    margin-bottom: 16px;
+}
+.form_infor_item h4 {
+    margin-top: 16px;
+}
+.form_infor_item input {
+    padding: 5px 16px;
+    width: 400px;
+    height: 28px;
+    margin-top: 8px;
+}
+.form_infor_button button {
+    width: 434px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--main_blue);
+    color: var(--white);
+    margin-top: 32px;
+}
+.login_page_form .form_other {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 32px;
+}
+.form_other a {
+    color: var(--main_yellow_01)
+}
+
+/* Header */
+.header {
+    max-width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 150px;
+    box-shadow: 0px 1px 4px 0px var(--sub_content);
+    overflow: auto;
+}
+/* Header_left */
+.header_left {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+}
+.header_left_logo .logo {
+    width: 50px;
+    height: 50px;
+}
+.header_left_menu {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+.menu_item {
+    margin: 0px 10px;
+    padding: 5px 0px;
+}
+.menu_item:has(a:hover) {
+    border-bottom: 2px solid var(--main_yellow_02);
+}
+.menu_item a:hover {
+    color: var(--main_yellow_02);
+}
+
+/* Header_center */
+.header_center {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.header_center_search {
+    padding: 8px 32px 8px 16px;
+    width: 380px;
+}
+.header_center img {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    right: 16px;
+}
+
+/* Header_right */
+.header_right {
+    display: flex;
+}
+.header_right_user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header_right_user div {
+    text-align: end;
+}
+.header_right_avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 8px;
+    border: 0.1px solid var(--pale_white);
+}
